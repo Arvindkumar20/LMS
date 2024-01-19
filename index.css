@@ -1,0 +1,619 @@
+*{
+    padding: 0;
+margin: 0;
+}
+/*************************************top navbar when scroll window #scroll-nav-bar *********************************** */
+#scroll-nav-bar{
+    display: none;
+width: 100%;
+padding: 2px;
+/* font-size: 18px; */
+transition: top 0.3s; 
+position: fixed;
+& #threeBar{
+    display: none;
+}
+}
+
+/* ************************************** header id  **********************************/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3px;
+    color: rgb(24, 2, 24);
+}
+/* **************************************option  box on background image .list class  **********************************/
+.list{
+    display: flex;
+    align-items: center;
+}
+/********************************* option on background image  .list-item class ************************************/
+.list-item{
+    list-style: none;
+padding: 3px 6px;
+font-weight: bold;
+font-size: 15px;
+transition: all 0.8s ease 0s;
+/* background-color: rgb(21, 4, 4); */
+border-radius: 4px;
+color: #fff;
+text-shadow: 6px 0 7px rgb(36, 9, 9);
+}
+/* ****************************option on background image  .list-item class:hover class ********************************/
+.list-item:hover{
+    list-style: none;
+    padding: 3px 6px;
+scale: 1.2;
+color: rgb(239, 153, 16);
+border-radius: 5px;
+/* font-weight: bold; */
+cursor: pointer;
+}
+/* *******************************************************first image********************** */
+#first-image{
+    display: flex;
+}
+#first>img{
+    width: 300px;
+    height: 300px;
+    padding: 4px;
+    border-radius: 7px;
+}
+#image-content>h3{
+padding: 4px;
+margin: 3% 30%;
+}
+/* *********************************************#search *********************************** */
+#search{
+    display: grid;
+justify-content: center;
+align-items: center;
+background-color: rgb(147, 149, 147);
+padding: 4px;
+position: relative;
+}
+  
+/* *********************************************# search button ********************************************************************************************************************************************** */
+#search-button{
+    padding: 7px;
+    background-color: rgb(190, 189, 189);
+    border-radius: 3px;
+}
+/* *************************************************************************************************************************************************************************************************************************************************************************#search box *********************************** */
+#input{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+/************************ your searching topics  *******************************************************************************************************************************************************************************/
+#search-box{
+    padding: 7px;
+    width: 350px;
+    font-size: 15px;
+    border-radius: 3px;
+    align-items: center;
+    background-color: #f6f6f9;
+    border: 0;
+    outline: none;
+}
+#searchHistory{
+    display: none;
+    position: absolute;
+    margin-left: 35.5%;
+    transform: translateY(80%);
+padding: 5px;
+background-color: #3f3f41;
+color: #f6f6f9;
+border-radius: 5px;
+line-height: 2;
+font-size: 20px;
+padding: 10px 30px;
+font-family: serif;
+    & li{
+        list-style: none;
+        & span{
+            margin-left: 250px; 
+        }
+        & span:hover{
+            margin-left: 250px;
+            background-color: #9797f5;
+            padding: 10px 10px;
+            border-radius: 70px;
+            cursor: pointer;
+        }
+    }
+
+    }
+
+/* *********************************************# search button hover *********************************************************************************************************************************************************************************** */
+#search-button:hover{
+    cursor: pointer;
+    padding: 7px;
+}
+/********************************************#header-left **************************************************************************************************************************************************************************************** */
+#header-left{
+    display: flex;
+    background-color: rgb(30, 29, 29); 
+    color: rgb(243, 238, 238); 
+    justify-content: space-between;  
+    align-items: center;
+    padding: 6px;
+    }
+    /**************************************** #logo *****************************************/
+#logo{
+    width: 50px;
+    aspect-ratio: 1;
+}
+/* *********************************************#logo:hover *********************************** */
+#logo:hover{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 6px;
+    -webkit-filter:invert(80%) ;
+scale: 1.2;
+cursor: pointer;
+}
+    /******************************************** icons ************************* */
+    i{
+        justify-content: space-between;
+        color: rgb(135, 136, 137);
+        transition: transform(.5s);
+    }
+    /******************************************** icons:hover ************************* */
+     i:hover{
+        justify-content: space-between;
+        color: #fff;
+        scale: 1.25;
+    }
+/* *********************************************# login options*********************************** */
+#hide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hide:hover{
+    cursor: pointer;
+}
+#login-options{
+    display: none;
+    text-transform: capitalize;
+}
+
+/* *********************************************# book-section  *********************************** */
+.book-section{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 3;
+}
+/* *********************************************# books-image  *********************************** */
+
+.books-image{
+    list-style: none;
+    padding: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    & p{
+    color: rgb(26, 25, 25);
+
+   padding: 10px 5px 10px 5px;     
+margin-top: 10px;      
+  background-color: #f0ede9;
+border-radius: 6px;
+transition: all 0.5s ease 0.5s;
+    }
+    & p:hover{
+    color: rgb(72, 69, 69);
+        padding: 10px 5px 10px 5px;     
+     margin-top: 10px;     
+        background-color: rgb(152, 248, 149);
+        color: rgb(40, 60, 240);
+     border-radius: 6px;
+     font-weight: bold;
+     cursor: pointer;
+         }
+}
+
+/* *********************************************# book******************************* */
+.book{
+    width: 90%;
+    height: 200px;
+    display: block;
+  margin-right: 40px;
+transition: all .8s ease 0s;
+justify-content: space-evenly;
+border-radius: 4px;
+}
+/* *********************************************# book:hover *********************************** */
+.book:hover{
+  
+    display: block;
+cursor: pointer;
+    transform: scale(1.07);
+}
+
+/* *********************information  *****************************************/
+#information{
+    display: grid;
+    aspect-ratio: 2;
+    padding: 10px;
+}
+.images{
+    margin-left: 27%;
+    width: 50%;
+    aspect-ratio: 2;
+}
+#trend>h2{
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+    padding: 5px;
+   font-size: 1.8rem;
+   color: rgb(13, 13, 154);
+text-transform: capitalize;
+
+}
+.text{
+    text-align: center;
+   text-wrap: word-wrap;
+   word-spacing: 6px;
+/* text-align: justify; */
+   /* font-size: 1.5rem; */
+}
+/* *****************************contact option of footer ************************** */
+#footer{
+    background-color: #9797f5;
+    text-align: center; 
+    text-transform:capitalize;
+}
+#contact{
+    display: grid;
+}
+/* *****************************help option of footer ************************** */
+#help{
+    display: grid;
+}
+/* ****************************services option of footer ************************** */
+#services{
+    display: grid;
+}
+/* *****************************contact option of footer ************************** */
+#contact{
+    display: grid;
+}
+/* *****************************footer #bottom************************** */
+#bottom{
+    display: flex;
+    justify-content: space-around;
+    background-color: #24262b;
+    color: aliceblue;
+    text-transform: lowercase;
+}
+/************************************* all a tags *********************************** */
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/************************************* all a tags hover *********************************** */
+/* a:hover{
+    text-decoration: none;
+    color: rgb(225, 172, 15);
+    scale: 1.1;
+} */
+#contact>a:hover{
+    text-decoration: none;
+    color: rgb(225, 172, 15);
+    scale: 1.1;
+}  
+#help>a:hover{
+    text-decoration: none;
+    color: rgb(225, 172, 15);
+    scale: 1.1;
+} 
+#services>a:hover{
+    text-decoration: none;
+    color: rgb(225, 172, 15);
+    scale: 1.1;
+}  
+
+
+/* **************************************************************************** */
+/* ********************************************************************************** */
+/* *********************************media query********************************** */
+@media only screen and (max-width:650px){
+    /*************************************top navbar when scroll window #scroll-nav-bar *********************************** */
+#scroll-nav-bar{
+    display: none;
+width: 100%;
+transition: top 0.3s; 
+position: fixed;
+& #threeBar{
+    display: block;
+}
+}
+  /* ************************************** header id  **********************************/
+#header{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3px;
+    color: rgb(24, 2, 24);
+}
+/* **************************************option  box on background image .list class  **********************************/
+#list{
+    display: none;
+    align-items: center;
+}
+/********************************* option on background image  .list-item class ************************************/
+.list-item{
+    list-style: none;
+padding: 3px 7px;
+font-size: 12px;
+
+/* font-weight: bold; */
+transition: all 0.8s ease 0s;
+/* background-color: rgb(21, 4, 4); */
+border-radius: 4px;
+text-shadow: 6px 0 7px rgb(239, 233, 233);
+color: #000;
+
+}
+/* ****************************option on background image  .list-item class:hover class ********************************/
+.list-item:hover{
+    list-style: none;
+    padding: 3px 7px;
+color: rgb(10, 109, 8);
+background-color: rgb(166, 242, 242);
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* *********************************************#search *********************************** */
+#search{
+    display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(147, 149, 147);
+& input{
+    padding: 3px;
+    font-size: 13px;
+}
+}
+/* *********************************************#search box *********************************** */
+#search-box{
+    padding: 3px;
+    width: 30%;
+    font-size: 13px;
+    border-radius: 3px;
+}
+/* *********************************************# search button *********************************** */
+#search-button{
+    padding: 3px;
+}
+/* *********************************************# search button hover *********************************** */
+#search-button:hover{
+    cursor: pointer;
+    padding: 3px;
+}
+/********************************************#header-left ************************* */
+#header-left{
+    display: flex;
+    background-color: rgb(30, 29, 29); 
+    color: rgb(243, 238, 238); 
+    justify-content: space-between;  
+    padding: 4px;
+    }
+/**************************************** #logo *****************************************/
+
+    #logo{
+        width: 40px;
+        aspect-ratio: 1;
+    }
+    /* *********************************************#logo:hover *********************************** */
+    #logo:hover{
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 6px;
+        -webkit-filter:invert(80%) ;
+    
+    }
+    
+/******************************************** icons ************************* */
+i{
+    justify-content: space-between;
+    color: rgb(135, 136, 137);
+    transition: transform(.4s);
+    font-size: 12px;
+}
+/******************************************** icons:hover ************************* */
+ i:hover{
+    justify-content: space-between;
+    color: aliceblue;
+}
+/* ***********************background image content #any id ****************************/
+#login{
+    display: grid;
+}
+#hide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* *********************************************# login options*********************************** */
+
+#login-options{
+    display: none;
+}
+/* *********************************************# book-section  *********************************** */
+.book-section{ 
+    display: block;
+    text-align: center;
+    aspect-ratio: 5;
+}
+/* *********************************************# books-image  *********************************** */
+.books-image{
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    color: rgb(26, 25, 25);
+    text-transform: capitalize;
+}
+/* *********************************************# book *********************************** */
+.book{
+    width: 96%;
+    height: 175px;
+    display: block;
+transition: all .8s ease 0s;
+justify-content: space-evenly;
+border-radius: 4px;
+margin-top: 2%;
+}
+/* *********************************************# book:hover *********************************** */
+.book:hover{
+  
+    display: block;
+    transform: scale(1.07);
+}
+/* *********************information  *****************************************/
+#information{
+    display: grid;
+    /* align-items: center;
+    justify-content: center; */
+    /* background-image: url(trend.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 1.2;
+    padding: 10px;
+}
+#trend>h2{
+    display: grid;
+    align-items: center;
+    justify-content: center; 
+   font-size: 1.3rem;
+   color: rgb(40, 40, 235);
+text-transform: capitalize;
+}
+.images{
+    width: 60%;
+    margin-left: 25%;
+    aspect-ratio: 2;
+}
+.text{
+    text-align: center;
+   text-wrap: word-wrap;
+   font-size: 1rem;
+}
+
+/* *****************************contact option of footer ************************** */
+#contact{
+    display: grid;
+    font-size: small;
+}
+/* *****************************help option of footer ************************** */
+#help{
+    display: grid;
+    font-size: small;
+
+}
+/* ****************************services option of footer ************************** */
+#services{
+    display: grid;
+    font-size: small;
+
+}
+/* *****************************contact option of footer ************************** */
+#contact{
+    display: grid;
+    font-size: small;
+
+}
+/* *****************************footer #bottom************************** */
+#bottom{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+    text-transform: lowercase;
+}
+/************************************* all a tags *********************************** */
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/************************************* all a tags hover *********************************** */
+#contact>a:hover{
+    text-decoration: none;
+    color: rgb(225, 172, 15);
+}  
+#help>a:hover{
+    text-decoration: none;
+    color: rgb(225, 172, 15);
+} 
+#services>a:hover{
+    text-decoration: none;
+    color: rgb(225, 172, 15);
+}  
+}
+@media (min-width: 100px) and (max-width: 300px) {
+
+    .book{
+    width: 90%;
+    height: 105px;
+    display: block;
+transition: all .8s ease 0s;
+justify-content: space-evenly;
+border-radius: 4px;
+margin-top: 2%;
+}
+    /* *****************************contact option of footer ************************** */
+    #contact{
+        display: grid;
+        font-size: 0.7rem;
+    }
+    /* *****************************help option of footer ************************** */
+    #help{
+        display: grid;
+        font-size: 0.7rem;
+    
+    }
+    /* ****************************services option of footer ************************** */
+    #services{
+        display: grid;
+        font-size: 0.7rem;
+    
+    }
+    /* *****************************contact option of footer ************************** */
+    #contact{
+        display: grid;
+        font-size: 0.7rem;
+    
+    }    
+    #bottom{
+        display: grid;
+    }
+    /* *********************************************#search box *********************************** */
+#search-box{
+    padding: 3px;
+    width: 50%;
+    font-size: 13px;
+    border-radius: 3px;
+}
+/* *********************************************# search button *********************************** */
+#search-button{
+    padding: 3px;  
+}
+#header-left{
+    display: grid;
+    background-color: rgb(30, 29, 29); 
+    color: rgb(243, 238, 238); 
+    justify-content: space-between;  
+    padding: 4px;
+    }
+}

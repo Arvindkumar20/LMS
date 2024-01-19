@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help center</title>
+<script src="https://kit.fontawesome.com/8bb42a0ce6.js" crossorigin="anonymous"></script>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    background-color: white;
+  }
+  /**************************************** #header *****************************************/
+  header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(167, 173, 173);
+}
+  /**************************************** #logo *****************************************/
+  #logo{
+    width: 50px;
+    aspect-ratio: 1;
+}
+/* *********************************************#logo:hover *********************************** */
+#logo:hover{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 6px;
+    -webkit-filter:invert(80%) ;
+}
+a{
+  text-decoration: none;
+    color: rgb(6, 132, 30);
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+a:hover{
+  color: rgb(96, 95, 93);
+  scale: 1.1;
+  font-weight: bold;
+
+}
+i:hover{
+  cursor: pointer;
+  color: rgb(96, 97, 98);
+}
+#input{
+    display: flex;
+    border: 2px solid green;
+    width: 205px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(221, 222, 223);
+}
+#search-box{
+    border: none;
+    outline: none;
+    background-color: rgb(221, 222, 223);
+font-size: 15px;
+}
+#searchHistory{
+  display: none;
+  background-color: black;
+  color: aliceblue;
+  padding: 4px;
+  width: 210px;
+  border-radius: 5px;
+}
+span{
+margin-left: 50px;
+}
+#content{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+  p>a{
+    padding: 6px;
+  }
+  h1::first-letter{
+text-transform: capitalize;
+font-size: 25px;
+}
+h2{
+  background-color: rgb(242, 240, 240);
+  color: blue;
+  text-transform: capitalize;
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+  text-align: center;
+}
+  p::first-letter{
+text-transform: capitalize;
+font-size: 25px;
+}
+#form-1{
+  display: grid;
+  & input{
+    padding: 5px;
+    width: 300px;
+  }
+}
+#drag{
+  margin-top: 20px;
+  padding: 5px;
+  width: 300px;
+  height: 100px;
+}
+#submit{
+  padding: 7px;
+  background-color: rgb(33, 145, 13);
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 17px;
+  box-shadow: 0px 10px 10px rgb(168, 169, 168);
+  text-shadow: 0px 10px 10px rgb(186, 188, 186);
+  border: none;
+  outline: none;
+}
+#submit:hover{
+  cursor: pointer;
+  padding: 7px;
+  background-color: rgb(242, 171, 79);
+  text-shadow: 0px 10px 10px rgb(245, 246, 245);
+  color: black;
+  width: 100px;
+  border-radius: 5px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+}
+li{
+            list-style: none;
+        }
+</style>
+</head>
+<body>
+  <header> 
+    <img src="logo.jpg" alt="logo" id="logo">
+    <a href="index.html">Home</a>
+     <!-- *********************search bar and search button ************************* -->
+    <div id="search">
+      <div id="input">
+      <input type="search" placeholder="search" id="search-box">
+     <i class="fa-solid fa-magnifying-glass" title="search " id="search-button"></i>
+    </div>
+      <ul id="searchHistory">
+     </ul>
+    </div> 
+  </header>
+  <div id="content">
+    <h2>help center</h2>
+    <p>if you have any problems then you contact me  <a href="https://www.twitter.com/@Arvind827502" title="Go to twitter"><i class="fa-brands fa-twitter">  </i></a>or mail at 
+        <a href="mailto:arvindkumar@gmail.com" title="gmail"><i class="fa-regular fa-envelope"></i></a>  
+    or chat on  <a href="https://wa.me/+918960905167" title=" Go to whatsapp"><i class="fa-brands fa-whatsapp"> </i></a> </p>
+    <h2>Send </h2>
+    <!-- **************************************form ************************ -->
+    <form action="java.java" id="form-1">
+      <label for="name">Name : </label>
+<input type="text" required spellcheck="true" placeholder="enter your name">
+<label for="name">phone No. : </label>
+<input type="number" required spellcheck="true" placeholder="enter your phone number">
+<label for="name">Email : </label>
+<input type="email" required spellcheck="true" placeholder="enter your Email">
+      <div id="feedback-section-1">
+        <!-- ***********************write your problem ******************************** -->
+        <textarea name="feedback" id="drag" cols="30" rows="10" placeholder="write your problems"></textarea>
+        <br><br> 
+        or
+        <br><br>
+        <input type="file"  placeholder="upload your  file" id="file">
+  <button id="submit">submit</button>
+</form>
+  </div>
+</div>
+</div>
+  <script src="search.js"></script>
+</body>
+</html>

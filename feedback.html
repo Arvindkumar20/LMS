@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feedback</title>
+    <style>
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(235, 235, 233);
+}
+        #feedback-form{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            padding: 10;
+            & input{
+                text-align: center;
+                padding: 5px;
+                width: 400px;
+                margin-top: 16px;
+                font-size: 17px;
+            }
+        }
+        #city{
+            padding: 8px;
+            width: 415px;
+            margin-top: 5px;
+
+        }
+        #feedback{
+            margin-top: 5px;
+        }
+        #submit{
+            padding: 10px;
+            width: 200px;
+            margin: 5px 25%;
+            border: none;
+            outline: none;
+            background-color: rgb(115, 252, 206);
+            font-size: 17px;
+            border-radius: 5px;
+        }
+        #submit:hover{
+            padding: 10px;
+            width: 200px;
+            margin: 5px 25%;
+            border: none;
+            outline: none;
+            background-color: rgb(99, 234, 189);
+            font-size: 17px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="feedback.java" id="feedback-form">
+    <input type="text" placeholder="name" title="enter your name" spellcheck="false" required>
+    <input type="email" placeholder="email" title="enter your email" spellcheck="false" required>
+    <input type="phone" placeholder="phne no." title="enter your phone number" required>
+    <select name="city" id="city">
+        <option value="LUCKNOW">LUCKNOW</option>
+        <option value="SITAPUR">SITAPUR</option>
+        <option value="BARABANKI">BARABANKI</option>
+        <option value="KANPUR">KANPUR</option>
+        <option value="DELHI">DELHI</option>
+        <option value="AYODHA">AYODHA</option>
+        <option value="AGRA">AGRA</option>
+        <option value="DELHI">DELHI</option>
+    </select>
+     <textarea name="feedback" id="feedback" cols="30" rows="10">write here</textarea>
+     <button id="submit">submit</button>
+  </form>  
+</body>
+</html>

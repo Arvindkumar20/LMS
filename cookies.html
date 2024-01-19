@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookies</title>
+<script src="https://kit.fontawesome.com/8bb42a0ce6.js" crossorigin="anonymous"></script>
+<!-- <script src="https://kit.fontawesome.com/8bb42a0ce6.js" crossorigin="anonymous"></script> -->
+
+    <style>
+        #about{
+justify-content: start;
+margin-left: 4%;
+width: 50%;
+& h1{
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+                  'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(68, 61, 61);
+text-transform: capitalize;
+background-color: rgb(244, 244, 236);
+border-radius: 5px;
+}
+& p{
+text-align: justify;
+font-weight: 550;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ }  
+        #header{
+            display: flex;
+            gap: 20px; 
+       & a{
+            text-transform: capitalize;
+            font-weight: 400;
+            color: rgb(132, 131, 131);
+            text-decoration: none;
+            padding: 5px 7px;
+            border-radius: 14px;
+        }
+        & a:hover{
+        color: rgb(53, 52, 52);
+        font-weight: 500;
+            background-color: rgb(233, 233, 234);
+        }
+        & #search{
+border: 1.5px solid rgb(150, 147, 147);
+border-radius: 5px;
+background-color: aliceblue;
+    }
+    }
+#logo{
+    width: 60px;
+    /* transition: all 0.5s ease 0.5s; */
+}
+#logo:hover{
+    width: 60px;
+    transform: scale(1.1);
+}
+#search-button{
+border: none;
+outline: none;
+background-color: aliceblue;
+}
+#search-button:hover{
+    cursor: pointer;
+border: none;
+outline: none;
+background-color: aliceblue;
+}
+#search-box{
+    background-color: aliceblue;
+    padding: 5px;
+            border: none;
+            outline: none;
+}
+#cookies{
+    display: none;
+    margin-left: 40%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(60, 60, 229);
+    border-radius: 4px;
+    width: 300px;
+    aspect-ratio: 2;
+    padding: 5px;
+font-size: 17px;
+font-weight: bold;
+position: absolute;
+}
+
+#buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#yes{
+    padding: 5px;
+    background-color: bisque;
+    border-radius: 5px;
+    width: 70px;
+    margin-right: 30px;
+}
+#cancel{
+    padding: 5px;
+background-color: rgb(108, 106, 106);
+color: azure;
+border-radius: 5px;
+width: 70px;
+
+}
+    </style>
+</head>
+<body>
+    <header id="header">
+         <a href="index.html"> home</a>
+            <div id="search">
+                <button id="search-button">
+                    <i class="fa-solid fa-magnifying-glass" title="search "></i></button>
+                <input type="search" placeholder="search" id="search-box">
+            </div>
+    </header>
+    <div id="cookies">
+        <h1>Cookies</h1>
+        <p>accept all cookies</p>
+<ul><li>Name</li>
+<li>Email</li>
+<li>Port no</li></ul>
+<div id="buttons">
+    <button id="yes">Yes</button>
+<button id="cancel">cancel</button>
+</div>
+
+    </div>
+    <div id="about">
+            <h1>about library manage ment system</h1>
+            <p>library management allow you to only use services but if use it unauothriged then you are responsible for it and yuo come under crime.if you use it's data without permission the you are come under copyright rules.</p>
+            <p>library management allow you to only use services but if use it unauothriged then you are responsible for it and yuo come under crime.if you use it's data without permission the you are come under copyright rules.</p>  <p>library management allow you to only use services but if use it unauothriged then you are responsible for it and yuo come under crime.if you use it's data without permission the you are come under copyright rules.</p>  <p>library management allow you to only use services but if use it unauothriged then you are responsible for it and yuo come under crime.if you use it's data without permission the you are come under copyright rules.</p>
+    </div>
+    <div id="about">
+        <h1>cookies</h1>
+        <p>library management allow you to only use services but if use it unauothriged then you are responsible for it and yuo come under crime.if you use it's data without permission the you are come under copyright rules.</p>
+        <p>library management allow you to only use services but if use it unauothriged then you are responsible for it and yuo come under crime.if you use it's data without permission the you are come under copyright rules.</p>  <p>library management allow you to only use services but if use it unauothriged then you are responsible for it and yuo come under crime.if you use it's data without permission the you are come under copyright rules.</p>  <p>library management allow you to only use services but if use it unauothriged then you are responsible for it and yuo come under crime.if you use it's data without permission the you are come under copyright rules.</p>
+    </div>
+   
+    <script>
+let showCookies=document.getElementById('cookies');
+let buttons=document.querySelectorAll('button');
+setTimeout(()=>{
+    showCookies.style.display='grid';
+},5000);
+Array.from(buttons).forEach((e)=>{
+e.addEventListener('click',function(){
+    showCookies.style.display='none';
+});
+});
+    </script>
+    <script src="search.js"></script>
+</body>
+</html>

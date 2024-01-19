@@ -1,0 +1,401 @@
+/*************************************top navbar when scroll window #scroll-nav-bar *********************************** */
+#scroll-nav-bar{
+    display: none;
+width: 100%;
+transition: top 0.3s; 
+position: fixed;
+
+& #threeBar{
+    display: none;
+}
+}
+/* ************************************** header id  **********************************/
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3px;
+    color: rgb(24, 2, 24);
+}
+/* **************************************option  box on background image .list class  **********************************/
+.list{
+    display: flex;
+    align-items: center;
+}
+/********************************* option on background image  .list-item class ************************************/
+.list-item{
+    list-style: none;
+padding: 3px 6px;
+font-weight: bold;
+font-size: 15px;
+transition: all 0.8s ease 0s;
+/* background-color: rgb(21, 4, 4); */
+border-radius: 4px;
+color: #fff;
+text-shadow: 6px 0 7px rgb(36, 9, 9);
+}
+/* ****************************option on background image  .list-item class:hover class ********************************/
+.list-item:hover{
+    list-style: none;
+    padding: 3px 6px;
+
+color: rgb(239, 153, 16);
+border-radius: 5px;
+/* font-weight: bold; */
+cursor: pointer;
+}
+
+/* *********************************************#search *********************************** */
+#search{
+    display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(147, 149, 147);
+padding: 4px;
+}
+/* *********************************************#search box *********************************** */
+#search-box{
+    padding: 5px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 3px;
+}
+/* ul li.checked{
+color: #555;
+text-decoration: line-through;
+} */
+/* *********************************************# search button *********************************** */
+#search-button{
+    padding: 6px;
+    background-color: rgb(190, 189, 189);
+    border-radius: 3px;
+}
+/* *********************************************# search button hover *********************************** */
+#search-button:hover{
+    cursor: pointer;
+    padding: 5.8px;
+}
+/********************************************#header-left ************************* */
+#header-left{
+    display: flex;
+    background-color: rgb(30, 29, 29); 
+    color: rgb(243, 238, 238); 
+    justify-content: space-between;  
+    align-items: center;
+    padding: 6px;
+    }
+    /**************************************** #logo *****************************************/
+#logo{
+    width: 50px;
+    aspect-ratio: 1;
+}
+/* *********************************************#logo:hover *********************************** */
+#logo:hover{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 6px;
+    -webkit-filter:invert(80%) ;
+
+}
+    /******************************************** icons ************************* */
+    i{
+        justify-content: space-between;
+        color: rgb(135, 136, 137);
+        transition: transform(.5s);
+    }
+    /******************************************** icons:hover ************************* */
+     i:hover{
+        justify-content: space-between;
+        color: aliceblue;
+        scale: 1.2;
+    }
+/* *********************************************# login options*********************************** */
+#hide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#hide:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#login-options{
+    display: none;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/************************************* all a tags hover *********************************** */
+a:hover{
+    text-decoration: none;
+    color: rgb(225, 172, 15);
+}
+.image-section{
+display: grid;
+justify-content: center;
+align-items: center;
+gap: 40px;
+} 
+.image-box{
+  display: flex;
+  justify-content: space-evenly;
+align-items: center;
+padding: 4px;
+& img{
+  width: 23vw;
+  height: 38vh;
+  border-radius: 4px;
+padding: 4px;
+  outline: 0;
+border: none;
+margin: 0.5% 0.5%;}
+& img:hover{
+cursor: pointer;
+  scale:1.02;
+  border-radius: 4px;
+
+}
+}
+#contact{
+    display: grid;
+}
+/* *****************************help option of footer ************************** */
+#help{
+    display: grid;
+}
+/* ****************************services option of footer ************************** */
+#services{
+    display: grid;
+}
+/* *****************************contact option of footer ************************** */
+#contact{
+    display: grid;
+}
+/* *****************************footer #bottom************************** */
+#bottom{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+    text-transform: lowercase;
+}
+*{
+    padding: 0;
+margin: 0;
+}
+ /* ****************************media query for screen 650 px************************************************  ********************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+/* **************************************************************************** */
+/* ********************************************************************************** */
+/* *********************************media query********************************** */
+@media only screen and (max-width:650px){
+    /*************************************top navbar when scroll window #scroll-nav-bar *********************************** */
+#scroll-nav-bar{
+    display: none;
+width: 100%;
+transition: top 0.3s; 
+position: fixed;
+& #threeBar{
+    display: block;
+    cursor: pointer;
+}
+}
+  /* ************************************** header id  **********************************/
+#header{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3px;
+    color: rgb(24, 2, 24);
+}
+/* **************************************option  box on background image .list class  **********************************/
+#list{
+    display: none;
+    align-items: center;
+}
+/********************************* option on background image  .list-item class ************************************/
+.list-item{
+    list-style: none;
+padding: 3px 7px;
+font-size: 12px;
+
+/* font-weight: bold; */
+transition: all 0.8s ease 0s;
+/* background-color: rgb(21, 4, 4); */
+border-radius: 4px;
+text-shadow: 6px 0 7px rgb(239, 233, 233);
+color: #000;
+
+}
+/* ****************************option on background image  .list-item class:hover class ********************************/
+.list-item:hover{
+    list-style: none;
+    padding: 3px 7px;
+color: rgb(10, 109, 8);
+background-color: rgb(166, 242, 242);
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+}
+
+/* *********************************************#search *********************************** */
+#search{
+    display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(147, 149, 147);
+& input{
+    padding: 4px;
+    font-size: 13px;
+    width: 300px;
+    border-radius: 3px;
+}
+}
+/* *********************************************# search button *********************************** */
+#search-button{
+    padding: 3px;
+}
+/* *********************************************# search button hover *********************************** */
+#search-button:hover{
+    cursor: pointer;
+    padding: 3px;
+}
+/********************************************#header-left ************************* */
+#header-left{
+    display: flex;
+    background-color: rgb(30, 29, 29); 
+    color: rgb(243, 238, 238); 
+    justify-content: space-between;  
+    padding: 4px;
+    }
+/**************************************** #logo *****************************************/
+
+    #logo{
+        width: 40px;
+        aspect-ratio: 1;
+    }
+    /* *********************************************#logo:hover *********************************** */
+    #logo:hover{
+        width: 50px;
+        aspect-ratio: 1;
+        border-radius: 6px;
+        -webkit-filter:invert(80%) ;
+    cursor: pointer;
+    }
+    
+/******************************************** icons ************************* */
+i{
+    justify-content: space-between;
+    color: rgb(135, 136, 137);
+    transition: transform(.5s);
+    font-size: 12px;
+}
+/******************************************** icons:hover ************************* */
+ i:hover{
+    justify-content: space-between;
+    color: aliceblue;
+}
+/* **************************image .image-section******************************* */
+.image-section{
+display: grid;
+justify-content: center;
+align-items: center;
+gap: 40px;
+} 
+.image-box{
+  display: grid;
+  justify-content: center;
+align-items: center;
+& img{
+cursor: pointer;
+  width: 250px;
+  height: 230px;
+border-radius: 4px;
+ margin-top: 10%;
+}
+}
+
+/* *****************************contact option of footer ************************** */
+#contact{
+    display: grid;
+    font-size: small;
+}
+/* *****************************help option of footer ************************** */
+#help{
+    display: grid;
+    font-size: small;
+
+}
+/* ****************************services option of footer ************************** */
+#services{
+    display: grid;
+    font-size: small;
+
+}
+/* *****************************contact option of footer ************************** */
+#contact{
+    display: grid;
+    font-size: small;
+
+}
+/* *****************************footer #bottom************************** */
+#bottom{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+    text-transform: lowercase;
+}
+/************************************* all a tags *********************************** */
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+/************************************* all a tags hover *********************************** */
+a:hover{
+    text-decoration: none;
+    color: rgb(225, 172, 15);
+}  
+}
+@media (min-width:130px) and (max-width:350px){
+  .image-section{
+display: grid;
+justify-content: center;
+align-items: center;
+gap: 40px;
+} 
+.image-box{
+  display: grid;
+  justify-content: center;
+align-items: center;
+& img{
+cursor: pointer;
+  width: 120px;
+  height: 120px;
+border-radius: 4px;
+ margin-top: 10%;
+}
+}
+#bottom{
+    display: grid;
+    justify-content: space-around;
+    background-color: black;
+    color: aliceblue;
+    text-transform: lowercase;
+}
+#search-box{
+  width: 150px;
+  height: 25px;
+}
+}
+ul li.checked{
+color: #555;
+text-decoration: line-through;
+}
