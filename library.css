@@ -139,6 +139,7 @@ a:hover{
 display: grid;
 justify-content: center;
 align-items: center;
+background:black;
 gap: 40px;
 } 
 .image-box{
